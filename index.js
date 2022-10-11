@@ -6,6 +6,7 @@ if(retornoUsuario){
     alert('A quantidade de caracteres no seu nome é ' + nome.length) 
 }else{
      alert("Que pena! Você parecia ser uma pessoa mais legal :(")
+     window.close()
 }
 
 
