@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.texto{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 16px 14px 20px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto::before{
+    content: "";
+    background-image: conic-gradient(
+       #6eccc3 20deg, transparent 120deg);
+    width: 300%;
+    height: 300%;
+    position: absolute;
+    animation: rotate 3s linear infinite;
+    border-radius: 10px;
+    
+}
+.texto::after{
+    content: 'Transportai um punhado de terra todos os dias e fareis uma montanha.';
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+    font-weight: 800;
+    width: 290px;
+    height: 190px;
+    background-color: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
